@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: lightblue;
+    }
+
+    /* ::selection {
+        background-color: transparent;
+    } */
+</style>
+<body>
+<!-- <body oncontextmenu="return false;" oncopy="return false;" oncut="return false" onpaste="return false"> -->
+    aaaaaaaaaaaaaaaaaaa
+</body>
+<script>
+    window.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    });
+</script>
+<script>
+    window.addEventListener('selectstart', () => {});
+</script>
+
+</html>
