@@ -15,19 +15,34 @@
         background-color: lightblue;
     }
 
-    /* ::selection {
-        background-color: transparent;
-    } */
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    ::selection {
+        background-color: transparent !important;
+    }
 </style>
-<body>
-<!-- <body oncontextmenu="return false;" oncopy="return false;" oncut="return false" onpaste="return false"> -->
+
+<body oncontextmenu="return false;" oncopy="return false;" oncut="return false" onpaste="return false">
     aaaaaaaaaaaaaaaaaaa
+    <p style="background-color: aqua;">hoge</p>
 </body>
 <script>
     window.addEventListener('selectstart', function (e) {
         e.preventDefault();
     });
-    document.body.oncopy=()=>{console.log('hoge')}
+    document.body.oncontextmenu = () => {
+        alert('hoge')
+    }
+    document.oncontextmenu = () => {
+        alert('hoge')
+    }
 </script>
 
 </html>
