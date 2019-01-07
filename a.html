@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="force_enable.user.js"></script>
 </head>
 <style>
     body {
@@ -26,9 +27,7 @@
     window.addEventListener('selectstart', function (e) {
         e.preventDefault();
     });
-</script>
-<script>
-    window.addEventListener('selectstart', () => {});
+    document.body.oncopy=()=>{console.log('hoge')}
 </script>
 
 </html>
