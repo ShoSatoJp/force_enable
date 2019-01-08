@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Force Enable
 // @namespace    https://github.com/ShoSatoJp
-// @version      0.1
+// @version      0.2
 // @description  force enable text selection, copy, paste and right click and disable smooth scroll.
 // @author       ShoSato
 // @match        *://*/*
