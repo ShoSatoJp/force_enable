@@ -102,6 +102,7 @@
                     -ms-user-select: auto !important;
                         user-select: auto !important;
                 scroll-behavior: auto !important;
+                font-family: auto !important;
             }`;
             D.body && D.body.appendChild(style);
         }
