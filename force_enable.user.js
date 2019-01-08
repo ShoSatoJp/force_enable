@@ -49,7 +49,7 @@
             check(type, (() => Window_addEventListener_.bind(W, type, listener, option)()).bind(this));
         };
         D.addEventListener = function (type, listener, option) {
-            check(type, (() => Document_addEventListener_.bind(W, type, listener, option)()).bind(this));
+            check(type, (() => Document_addEventListener_.bind(D, type, listener, option)()).bind(this));
         };
     }
 
