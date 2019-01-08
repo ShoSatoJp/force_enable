@@ -91,7 +91,7 @@
         {
             const style = D.createElement('style');
             style.textContent = `::selection {
-                background-color: black !important;
+                background-color: #3390FF !important;
                 color: white !important;
             }
             * , body {
