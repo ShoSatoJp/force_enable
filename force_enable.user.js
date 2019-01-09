@@ -5,19 +5,11 @@
 // @description  force enable text selection, copy, paste and right click and disable smooth scroll.
 // @author       ShoSato
 // @match        *://*/*
-// @exclude *://*.google.com/*
-// @exclude *://*.google.co.jp/*
-// @exclude *://*.twitter.com/*
-// @exclude *://*.github.com/*
-// @exclude *://*.microsoftonline.com/*
-// @exclude *://*.dropbox.com/*
-// @exclude *://*.live.com/*
-// @exclude *://*.skype.com/*
-// @exclude *://*.bing.com/*
-// @exclude *://*.wunderlist.com/*
-// @exclude *://*.android.com/*
-// @exclude *://*.ac.jp/*
-// @exclude *://*.youtube.com/*
+// @exclude /^https?:\/\/(.*\.|)(google|amazon)\.(com|co\.[a-zA-Z]{2})\/.*$/
+// @exclude /^https?:\/\/(.*\.|)(twitter|github|microsoftonline|visualstudio|dropbox|live|skype|bing|wunderlist|android|youtube|amazon|facebook|apple|regex101)\.com\/.*$/
+// @exclude /^https?:\/\/(.*\.|)(nicovideo)\.jp\/.*$/
+// @exclude /^https?:\/\/(([^\/]+(bank|gin))\.(com|jp|co\.[a-zA-Z]{2})|([^\/]*\.|)((paypal|smbc-card)\.com)|(mufg|japanpost|smtb)\.jp|(kansaiurban|visa|aeonbank|smbc|smbctb|hyakugo|juroku|boy)\.(com|co\.[a-zA-Z]{2}))\/.*$/
+// @exclude *://*ac.jp/*
 // @grant        none
 // @run-at document-start
 // @updateURL https://raw.githubusercontent.com/ShoSatoJp/force_enable/master/force_enable.user.js
