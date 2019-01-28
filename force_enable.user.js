@@ -8,7 +8,6 @@
 // @exclude /^https?:\/\/(.*\.|)(google|amazon)\.(com|co\.[a-zA-Z]{2})\/.*$/
 // @exclude /^https?:\/\/(.*\.|)(twitter|github|microsoftonline|visualstudio|dropbox|live|skype|bing|wunderlist|android|youtube|amazon|facebook|apple|regex101)\.com\/.*$/
 // @exclude /^https?:\/\/(.*\.|)(nicovideo)\.jp\/.*$/
-// @exclude /^https?:\/\/(([^\/]+(bank|gin))\.(com|jp|co\.[a-zA-Z]{2})|([^\/]*\.|)((paypal|smbc-card)\.com)|(mufg|japanpost|smtb)\.jp|(kansaiurban|visa|aeonbank|smbc|smbctb|hyakugo|juroku|boy)\.(com|co\.[a-zA-Z]{2}))\/.*$/
 // @exclude *://*ac.jp/*
 // @grant        none
 // @run-at document-start
@@ -29,7 +28,7 @@
     const Window_addEventListener_ = W.addEventListener;
     const Document_addEventListener_ = D.addEventListener;
 
-    const TYPE_LIST = ['copy', 'cut', 'paste', 'selectstart', 'mousedown', 'keydown', 'contextmenu', 'scroll', 'mousewheel'];
+    const TYPE_LIST = ['copy', 'cut', 'paste', 'selectstart', 'mousedown', 'keydown', 'contextmenu', 'scroll', 'mousewheel','wheel'];
     const TYPE_LIST_WITH_ON = TYPE_LIST.map(x => 'on' + x);
     const RESULT_ELEMENT = D.createElement('p');
     let PROCESSED = 0;
